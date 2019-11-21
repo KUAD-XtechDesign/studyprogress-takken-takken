@@ -1,59 +1,77 @@
-<style>
-    .insta {
-        display: flex;
-        display: -webkit-flex;
-        flex-wrap: wrap;
-        -webkit-flex-wrap: wrap;
-    }
-    .insta > div {
-        position: relative;
-        width: 31%;
-        height: auto;
-        margin: 1%;
-        overflow: hidden;
-    }
-    .insta > div:before {
-        content: "";
-        display: block;
-        padding-top: 100%;
-    }
-    .insta > div > a {
-        position: absolute;
-        display: block;
-        top: 0; left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    .insta > div > a img{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: auto;
-        height: 100%;
-    }
-
-
-
-    .insta > div > a > span {/*classがfaのアイコンに対して*/
-        position: absolute;
-        top: 10%;
-        right: -5%;
-        -ms-transform: translate(-50%,-50%);
-        -webkit-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
-        margin:0;/*余計な隙間を除く*/
-        padding:0;/*余計な隙間を除く*/
-        font-size: 12px;/*サイズ*/
-        color: rgba(255, 255, 255, 0.6);/*半透明*/
-    }
-
-
-    .insta > div > a > span i:nth-child(2) {
-        opacity: 0.55;
-        color: red;
-    }
-
-</style>
+@media screen and (min-width: 1200px) {
+ .grid-container {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 15px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 3;
+  -moz-column-gap: 15px;
+  -moz-column-fill: balance !important;
+  column-count: 3;
+  column-gap: 15px;
+  column-fill: auto;
+ }
+}
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+ .grid-container {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 15px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 3;
+  -moz-column-gap: 15px;
+  -moz-column-fill: balance !important;
+  column-count: 3;
+  column-gap: 15px;
+  column-fill: auto;
+ }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+ .grid-container {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 15px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 3;
+  -moz-column-gap: 15px;
+  -moz-column-fill: balance !important;
+  column-count: 3;
+  column-gap: 15px;
+  column-fill: auto;
+ }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+ .grid-container {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 15px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 2;
+  -moz-column-gap: 15px;
+  -moz-column-fill: balance !important;
+  column-count: 2;
+  column-gap: 15px;
+  column-fill: auto;
+ }
+}
+@media screen and (max-width: 480px) {
+ .grid-container {
+  -webkit-column-count: 1;
+  -webkit-column-gap: 15px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 1;
+  -moz-column-gap: 15px;
+  -moz-column-fill: balance !important;
+  column-count: 1;
+  column-gap: 15px;
+  column-fill: auto;
+ }
+}
+.grid {
+ display: inline-block;
+ -webkit-column-break-inside: avoid;
+ -moz-column-break-inside: avoid;
+ column-break-inside: avoid;
+}
+/* Google Chorome BugFix */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+ .grid {
+  display: block !important;
+ }
+}
