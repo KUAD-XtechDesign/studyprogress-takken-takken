@@ -102,7 +102,7 @@ header{
    padding: 30px 50px;
    max-width: 1000px;
    margin: 0 auto;
-   position: relative;
+   position: absolute;
    z-index: 0;
  }
 
