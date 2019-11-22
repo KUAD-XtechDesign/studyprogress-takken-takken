@@ -10,6 +10,9 @@
   column-gap: 15px;
   column-fill: auto;
  }
+ <div>
+        <a>
+            <img src="https://placehold.jp/150x150.png" class="img-circle">
 }
 @media screen and (min-width: 993px) and (max-width: 1199px) {
  .grid-container {
