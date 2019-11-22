@@ -1,12 +1,12 @@
 @media screen and (min-width: 1200px) {
  .grid-container {
-  -webkit-column-count: 3;
+  -webkit-column-count: 1;
   -webkit-column-gap: 15px;
   -webkit-column-fill: auto;
-  -moz-column-count: 3;
+  -moz-column-count: 1;
   -moz-column-gap: 15px;
   -moz-column-fill: balance !important;
-  column-count: 3;
+  column-count: 1;
   column-gap: 15px;
   column-fill: auto;
  }
